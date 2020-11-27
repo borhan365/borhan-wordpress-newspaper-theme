@@ -1,0 +1,119 @@
+/**
+*-------------------------
+* :: BLOG PAGE
+*-------------------------
+*/
+section.azad-tag {
+    //background: #f6f6f6;
+    padding: 5rem 0;
+
+    .tag-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        article {
+            width: 49%;
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 1.5rem;
+            box-shadow: 2px 2px 2px rgba(0,0,0,0.3);
+
+            header {
+                width: 30%;
+
+                figure {
+                    img {
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+            }
+            .post-content {
+                width: 70%;
+                padding: 0 .5rem;
+                background: #ffffff;
+                box-shadow: 0 3px 7px 0 rgba(0,0,0,0.11);
+                
+                .article-content {
+                    padding: 0 0 0 .5rem;
+
+                    h2 {
+                        padding: 0 0 .5rem;
+
+                        a {
+                            color: var(--black);
+                            text-decoration: none;
+                            transition: all 0.5s ease-in-out !important;
+                            font-family: "NotoSerifBengali";
+                        }
+                    }
+
+                    p {
+                        color: #757272;
+                    }
+                }
+
+                .article-footer {
+                    padding: 0 0 0 .5rem;
+
+                    .post-categories {
+                        display: flex;
+                        flex-direction: row;
+                        padding: .5rem 0;
+                        flex-flow: wrap;
+
+                        li {
+                            margin: 0 .5rem;
+
+                            a {
+                                text-decoration: none;
+
+                                &:hover {
+                                    color: var(--red);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            &:hover {
+                .post-content {
+                    .article-content {
+                        h2 {
+                            a {
+                                color: #3a3838;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and ( max-width: 767px ),
+only screen and ( max-device-width: 767px ) {    
+
+    section.azad-tag {
+
+        .tag-container {
+
+            article {
+                flex-direction: column;
+                margin-bottom: 1rem;
+                width: 100%;
+
+                header, .post-content {
+                    width: 100%;
+                }
+                
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+}

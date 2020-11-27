@@ -1,0 +1,92 @@
+/**
+*-------------------------
+* :: SEARCH PAGE
+*-------------------------
+*/
+section.azad-search {
+    padding: 5rem 0;
+
+    .search-container {
+
+        article {
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 1rem;
+
+            header {
+                width: 30%;
+
+                figure {
+                    img {
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+            }
+            .article-body {
+                width: 70%;
+                padding: 0 .5rem;
+                background: #ffffff;
+                
+                .article-content {
+                    padding: 0 0 0 .5rem;
+
+                    h2 {
+                        padding: 0 0 .5rem;
+
+                        a {
+                            color: var(--red);
+                            text-decoration: none;
+                            transition: all 0.5s ease-in-out !important;
+
+                            &:hover {
+                                color: blue;
+                            }
+                        }
+                    }
+
+                    p {
+                        color: #757272;
+                    }
+                }
+
+                .article-footer {
+                    .post-categories {
+                        display: flex;
+                        flex-direction: row;
+                        padding: .5rem 0;
+                        flex-flow: wrap;
+
+                        li {
+                            margin: 0 .5rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and ( max-width: 767px ),
+only screen and ( max-device-width: 767px ) {    
+
+    section.azad-search {
+
+        .search-container {
+
+            article {
+                flex-direction: column;
+                margin-bottom: 1rem;
+
+                header, .article-body {
+                    width: 100%;
+                }
+                
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+}

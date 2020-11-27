@@ -1,0 +1,122 @@
+/**
+*-----------------------------------------------------
+*   = GLOBAL STYLE
+*-----------------------------------------------------
+*/
+body {
+    font: 1rem/1.5rem Verdana;
+    font-weight: normal; 
+	color: var( --black ); 
+	background: var( --bg ); 
+	text-align: center;
+}
+
+::selection {
+    color: #ffffff !important;
+    background-color: var(--red) !important;
+}
+
+@media ( min-width: 576px ) {
+    .azad-container { 
+        max-width: 540px;
+    }
+}
+
+@media ( min-width: 768px ) {
+    .azad-container { 
+        max-width: 720px;
+    }
+}
+
+
+@media ( min-width: 992px ) {
+    .azad-container { 
+        max-width: 960px;
+    }
+}
+
+.azad-container { 
+    width: calc( 100% - 20px );
+    margin: 0 auto;
+}
+
+@media ( min-width: 1200px ) {
+    .azad-container { 
+        max-width: 1280px;
+    }
+}
+
+section {
+    text-align: left;
+    margin: 5rem 0;
+}
+
+@media only screen and (max-width: 767px),
+only screen and ( max-device-width: 767px ) {
+
+    .azad-container { 
+        width: calc( 100% - 1rem );
+    }
+
+    section{
+        padding: 3rem 0;
+    }
+
+}
+
+h1 {
+    font: 36px/1.5em "Cabin", Helvetica, Arial, sans-serif;
+}
+
+h2, h3 {
+    font: 21px/1.5em "Cabin", Helvetica, Arial, sans-serif;
+    font-family: "NotoSerifBengali";
+}
+
+// h4 { font: 16px/1.5em "Cabin", Helvetica, Arial, sans-serif; }
+// h5 { font: 14px/1.5em "Cabin", Helvetica, Arial, sans-serif; }
+// h6 { font: 12px/1.5em "Cabin", Helvetica, Arial, sans-serif; }
+a:link { 
+    color: var(--red);
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-family: "NotoSerifBengali";
+    line-height: 1.5rem;
+}
+a:hover,
+a:focus,
+a:active,
+a:visited {
+    transition: all 0.5s ease-in-out !important;
+    text-decoration: underline;
+    text-decoration-color: var(--red);
+}
+p { margin-bottom: 1rem; font-family: "NotoSerifBengali"; }
+span { font-family: "NotoSerifBengali"; }
+// strong { font-weight: bold; }
+// em { font-style: italic; }
+ol,
+ul {
+    list-style: none;
+}
+// blockquote { border: 0; font: italic 21px/1.5em "Gentium Basic", Georgia, serif; color: #2894d8; }
+// blockquote cite { display: block; margin-top: 42px; font-size: 16px; font-style: normal; }
+// hr { border: none; height: 1px; background-color: #ededed; margin: 3em 0; }
+// input { background: #696969; border: 1px solid #c3c3c3; color: #cbcbcb; padding: 3px; }
+// input:focus, input:hover { background: #ededed; color: #4e4e4e; }
+
+.screen-reader-text {
+    border: 0;
+    clip: rect( 1px, 1px, 1px, 1px );
+    -webkit-clip-path: inset( 50% );
+    clip-path: inset( 50% );
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute !important;
+    width: 1px;
+    color: red;
+    word-wrap: normal !important;
+    word-break: normal;
+}

@@ -1,0 +1,39 @@
+/**
+*-----------------------------------------------------
+* :: = HEADER FIXED DESIGN
+*-----------------------------------------------------
+*/
+.big-wrapper {
+    section.header-fixed {
+        margin-top: 3.9rem !important;
+    }
+}
+
+@media only screen and ( max-width: 767px ),
+only screen and ( max-device-width: 767px ) {
+    .big-wrapper {
+        section.header-fixed {
+            margin-top: 4.4rem !important;
+        }
+    }    
+}
+
+.azad-header {
+    position: fixed;
+    z-index: 99;
+    right: 0;
+    left: 0;
+    top: 0;
+    box-shadow: 0 1px 1px -1px rgba( 0, 0, 0, 0.5 );
+    will-change: transform;
+    transition: transform .3s linear;
+    background: #2e2a27;
+}
+
+.swingInX {
+    transform: translateY( 0% );
+}
+
+.swingOutX {
+    transform: translateY( -100% );
+}

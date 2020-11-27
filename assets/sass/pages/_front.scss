@@ -1,0 +1,1755 @@
+/**
+*-------------------------
+* :: FRONT PAGE
+*-------------------------
+*/
+
+section.azad-news-scroll {
+    padding: 1rem 0;
+
+    .azad-breaking-news {
+
+        .breaking-news-container {
+            background: var(--red);
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+
+            .bn-title {
+                color: var(--black);
+                color: white;
+                padding: 10px 20px;
+                font-size: 25px;
+
+            }
+            .bn-content {
+                width: 100%;
+                padding-top: 6px;
+
+                marquee {
+                    ul {
+                        display: flex;
+
+                        li {
+                            margin-right: 30px;
+                            position: relative;
+
+                            &:before {
+                                content: '';
+                                display: block;
+                                width: 10px;
+                                height: 10px;
+                                position: absolute;
+                                top: 50%;
+                                left: -15px;
+                                background: white;
+                                transform: translate(0%, -50%) rotate(0deg);
+                            }
+                            a {
+                                color: white;
+                                text-decoration: none;
+                                font-family: "NotoSerifBengali";
+                            }
+                        }                        
+                    }
+                }                
+            }
+        }
+    }
+}
+
+section.azad-front-main-content {
+    margin: 1rem 0 0;
+    
+    .azad-front-main-content-container {
+        display: grid;
+        grid-template-columns: 1.9fr 1.1fr;
+        grid-gap: 2rem;
+
+        .azad-banner {
+
+            article {
+                flex-direction: column;
+                position: relative;
+
+                .article-header {
+
+                    figure {
+                        
+                        a {
+                            border-radius: 2px !important;
+                            display: block;
+                            img {
+                                width: 100%;
+                                height: 334px;
+                            }
+                        }
+                    }
+                }
+
+                .article-body {
+                    width: 100%;
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    transform: translate(0%, 50%) rotate(0deg);
+                    
+                    .article-body-inner {
+                        background: var(--red);
+                        border-radius: 2px;
+                        text-align: center;
+                        padding: .5rem;
+                        margin: 2rem;
+                        
+                        h2 {
+                            text-align: center;
+
+                            a {
+                                font-size: 2rem;
+                                line-height: 2.8rem;
+                                color: white;                            
+                                display: inline-block;
+                                background-image: linear-gradient(to bottom,transparent 20%,currentColor 21%);
+                                background-position: 0 90%;
+                                background-repeat: no-repeat;
+                                background-size: 0 1px;
+                                transition: background-size .15s ease-in-out !important;
+
+                                &:hover {
+                                    text-decoration: none;
+                                    background-size: 100% 1px;
+                                }                            
+                            }
+                        }
+                        a {
+                            font-size: 1rem;
+                            line-height: 1.2rem;
+                            color: white;                            
+                            display: block;
+
+                            &:hover {
+                                text-decoration: underline;
+                            }                            
+                        }
+
+                    }
+                    
+                }
+
+            }
+        }
+        
+        .azad-front-main-content-col {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 2rem;
+            
+            article {
+                background: white;
+                border-radius: 2px;
+                // align-items: center;
+                box-shadow: 2px 2px 2px rgba(0,0,0,.3);
+                display: grid;
+                grid-template-columns: .7fr 1.3fr;
+                grid-gap: 1rem;
+                
+
+                .article-header {
+
+                    figure {
+                        height: 100%;
+                        a {
+                            img {
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                    }
+                }
+
+                .article-body {
+
+                    h2 {
+                        line-height: 1.4rem;
+                        a {
+                            font-size: 1.2rem;
+                            line-height: 1.5rem;
+                            text-decoration: none;
+                            font-family: "NotoSerifBengali";
+                            color: var(--black);
+                            transition: all 0s;
+
+                            &:hover {
+                                text-decoration: underline;
+                                text-decoration-color: var(--red);
+                            }
+                        }
+                    }
+                    a {
+                        color: var(--red);
+                        font-size: 1rem;
+                        display: block;
+                    }
+                }
+            }
+        }
+        
+    }
+}
+
+section.azad-carousel {
+    margin: var(--section-margin-top) 0 0;
+
+    .gallery-blog {
+        .swiper-button-prev {
+            background: var(--red);
+            top: 97% !important;
+            font-size: 4px;
+            left: 95% !important;
+            height: 31px;
+            &:after {
+                font-size: 15px;
+            }
+        }
+        .swiper-button-next {
+            background: var(--red);
+            height: 31px;
+            top: 97% !important;
+            font-size: 4px;
+            right: 0 !important;
+            &:after {
+                font-size: 15px;
+            }
+        }
+    }
+
+    .azad-carousel-four {
+        padding-bottom: 40px;
+
+        article {
+            background: #fff;
+            box-shadow: 2px 2px 2px rgba(0,0,0,.3);
+
+            .post-header {
+                img {
+                    width: 100%;
+                }
+            }
+            .post-body {
+                padding: 5px;
+                min-height: 6.6rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+
+                h2 {
+                    line-height: 1.4rem;
+                    min-height: 55px;
+                    a {
+                        font-size: 1.2rem;
+                        text-decoration: none;
+                        line-height: 1.5rem;
+                        font-family: "NotoSerifBengali";
+                        color: var(--black);
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+                span {
+                    color: red;
+                }
+            }
+        }
+    }
+}
+
+section.azad-tabs-section {
+    margin: 1rem 0 0;
+
+    h3 {
+        color: var(--black);
+        margin: 0 1rem .7rem .7rem;
+        position: relative;
+
+        &:before {
+            content: '';
+            display: block;
+            width: 3px;
+            height: 100%;
+            top: 0;
+            left: -.7rem;
+            background: var(--red);
+            position: absolute;
+        }
+    }
+    
+    .azad-tabs-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .azad-tabs-container {
+            width: 68%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            .azad-single-post {
+                width: 60%;
+                
+                article {
+                    flex-direction: column;
+                    position: relative;
+                    box-shadow: 2px 2px 2px rgba(0,0,0,.3);
+
+                    .article-header {
+                        width: 100%;
+
+                        figure {
+                            a {
+                                img {
+                                    width: 100%;
+                                    height: 233px;
+                                }
+                            }
+                        }
+                    }
+
+                    .article-body {
+                        width: 100%;
+                        background: white;
+                        
+                        h2 {
+                            text-align: left;
+
+                            a {
+                                font-size: 1.5rem;
+                                line-height: 2rem;
+                                color: var(--black);
+                                text-decoration: none;
+                                padding: .5rem;
+                                display: block;
+
+                                &:hover {
+                                    text-decoration: underline;
+                                }
+
+                            }
+                        }
+                    }
+
+                }
+            }
+            
+            .azad-multi-posts {
+                width: 37%;
+
+                article {
+                    display: flex;
+                    flex-direction: row;
+                    margin-bottom: 1.9rem;
+                    background: white;
+                    align-items: center;
+                    box-shadow: 2px 2px 2px rgba(0,0,0,.3);
+
+                    .article-header {
+                        width: 40%;
+
+                        figure {
+                            a {
+                                img {
+                                    width: 100%;
+                                    height: auto;
+                                }
+                            }
+                        }
+                    }
+                    .article-body {
+                        width: 60%;
+
+                        h2 {
+                            padding: 0 10px;
+                            line-height: 1.4rem;
+                            a {
+                                font-size: 18px;
+                                text-decoration: none;
+                                font-family: "NotoSerifBengali";
+                                color: var(--black);
+
+                                &:hover {
+                                    text-decoration: underline;
+                                }
+                            }
+                        }
+                    }
+                }
+            }            
+        }
+        .azad-tabs-group {
+            width: 30%;
+            position: relative;
+
+            ul.double-tab {
+                ///margin: 10px 0 10px 10px;
+                font-weight: bold;
+                position: absolute;
+                top: -2.5rem;
+                background: #e3e3e3;
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                border: 1px solid var(--red);
+
+                li {
+                    width: 50%;
+                    border-bottom: 1px solid transparent;
+
+                    &:last-child {
+                        border-left: 1px solid var(--red);
+                    }
+
+                    &.active {
+                        border-bottom: 1px solid #e3e3e3;
+                        a {
+                            background: var(--red);
+                            color: white;
+                        }
+                    }
+
+                    a {
+                        background: white;
+                        padding: .5rem;
+                        display: block;
+                        text-align: center;
+                        text-decoration: none;
+                        color: var(--black);
+                        
+                    }
+                }
+            }
+            
+            .azad-category {
+                width: 100%;
+                box-shadow: 2px 2px 2px rgba(0,0,0,.3); 
+
+                .double-tab-pane {
+                    display: none;
+
+                    &.active {
+                        display: block;
+                    }
+                }
+
+                article {
+                    background: var(--red);
+                    padding: .7rem 0 .7rem .6rem;
+                    border-bottom: 1px dotted #d2d1d1;
+
+                    &:last-child {
+                        border-bottom: 0;
+                    }
+
+                    h2 {
+                        line-height: 1.4rem;
+                        font-family: "NotoSerifBengali";
+
+                        a {
+                            text-decoration: none;
+                            font-size: 1.1rem;
+                            color: white;
+                            font-weight: bold;
+                            font-family: "NotoSerifBengali";
+
+                            &:hover {
+                                color: var(--black);
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                } 
+
+                ul.wpp-list {
+                    background: var(--red);
+                    li {
+                        padding: .7rem 0 .7rem .6rem;
+                        border-bottom: 1px dotted #d2d1d1;
+                        margin-bottom: 0 !important;
+
+                        a {
+                            text-decoration: none;
+                            font-size: 1.1rem;
+                            color: white;
+                            font-weight: bold;
+                            font-family: "NotoSerifBengali";
+
+                            &:hover {
+                                color: var(--black);
+                                text-decoration: underline;
+                            }
+                        }
+                        &:last-child {
+                            border-bottom: 0;
+                        }
+                    }
+                }                           
+            }
+            
+        }
+    }
+}
+
+// AZAD DOUBLE POSTS BEGINS
+section.azad-double-posts {
+    margin: var(--section-margin-top) 0 0;
+    padding: 0;
+    
+    .azad-double-posts-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2rem;
+
+        .azad-tabs-container {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            grid-gap: 2rem;
+
+            .azad-single-post {
+                position: relative;
+                background: white;
+                box-shadow: 2px 2px 2px rgba(0,0,0,.3);
+
+                h3 {
+                    color: var(--black);
+                    position: absolute;
+                    top: -16%;
+                    left: 0;
+                    margin: .8rem 0 0 .6rem;
+
+                    &:before {
+                        content: '';
+                        display: block;
+                        width: 3px;
+                        height: 100%;
+                        top: 0;
+                        left: -10px;
+                        background: var(--red);
+                        position: absolute;
+                    }
+                }
+
+                article {
+                    
+                    .article-header {
+                        width: 100%;
+
+                        figure {
+                            a {
+                                img {
+                                    width: 100%;
+                                    height: 313px;
+                                }
+                            }
+                        }
+                    }
+
+                    .article-body {
+
+                        h2 {
+                            text-align: left;
+                            line-height: 1rem;
+
+                            a {
+                                font-size: 1.5rem;
+                                line-height: 2rem;
+                                color: white;
+                                display: block;
+                                padding: 5px;
+                                color: var(--black);
+                                text-decoration: none;
+                                font-family: "NotoSerifBengali";
+
+                                &:hover {
+                                    text-decoration: underline;
+                                }
+                                
+                            }
+                        }
+                    }
+
+                }
+            }
+            
+            .azad-multi-posts {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-gap: 2rem;
+
+                article {
+                    background: white;
+                    box-shadow: 2px 2px 2px rgba(0,0,0,.3);
+
+                    .article-header {
+
+                        figure {
+                            a {
+                                img {
+                                    width: 100%;
+                                    height: auto;
+                                }
+                            }
+                        }
+                    }
+                    .article-body {
+
+                        h2 {
+                            padding: .5rem;
+                            a {
+                                text-decoration: none;
+                                font-family: "NotoSerifBengali";
+                                color: var(--black);
+                                display: block;
+
+                                &:hover {
+                                    text-decoration: underline;
+                                }
+                                
+                            }
+                        }
+                    }
+                }
+            }            
+        }
+    }
+} // ends azad double posts
+
+// PORTFOLIOI GRID
+section.azad-portfolio-section {
+    margin: 2rem 0 0;
+
+    .tabs {
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: left;
+
+        h5 {
+            display: flex;
+            color: var(--red);
+            justify-content: center;
+            align-items: center;
+            padding: .5rem;
+            position: relative;
+            font-size: 1.2rem;
+            font-family: "NotoSerifBengali";
+
+            &:hover {
+                text-decoration: underline;
+            }
+
+            &:after {
+                content: '';
+                width: 3px;
+                height: 71%;
+                background: var(--red);
+                left: 0;
+                top: 7px;
+                position: absolute;
+            }
+        }
+
+        .mobile-tab {
+
+            h4 {
+                display: none;
+                font-size: 1rem;
+            }
+
+            .nav-tabs {
+                display: flex;
+                flex-direction: row;
+                list-style-type: none;
+                
+                li {
+
+                    a {
+                        padding: .8rem;
+                        border-radius: 4px 4px 0 0;
+                        text-decoration: none;
+                        display: block;
+                        font-family: "NotoSerifBengali";
+                        color: var(--red);
+                        font-size: 1.2rem;
+
+                        &:hover, &:focus {
+                            color: var(--red);
+                            cursor: default;
+                            text-decoration: underline;
+                        }
+                    }
+
+                    &:first-child {
+                        display: none;
+                    }
+
+                    &.active {
+                        a {
+                            color: var(--black);
+                            cursor: default;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    .azad-portfolio-section-container {
+        display: grid;
+        grid-template-columns: 5fr 1fr;
+        grid-gap: 2rem;
+
+        .azad-tab-content {
+
+            .azad-tab-row {
+                &.tab-pane {
+                    display: none;
+                    &.active {
+                        display: block;
+                    }
+                }
+
+                .azad-tabs-container { 
+                    display: grid;
+                    grid-template-columns: 2fr 2fr;
+                    grid-gap: 2rem;
+
+                    .azad-single-post {
+                        background: white;
+                        box-shadow: 2px 2px 2px rgba(0,0,0,.3);
+
+                        article {
+                            position: relative;
+
+                            .article-header {
+
+                                figure {
+                                    a {
+                                        img {
+                                            width: 100%;
+                                            height: auto;
+                                        }
+                                    }
+                                }
+                            }
+
+                            .article-body {
+
+                                h2 {
+                                    text-align: center;
+                                    line-height: 1rem;
+                                    padding: 1rem 0;
+
+                                    a {
+                                        font-size: 1.5rem;
+                                        line-height: 2rem;
+                                        color: white;
+                                        display: block;
+                                        padding: 5px;
+                                        color: var(--black);
+                                        text-decoration: none;
+                                        font-family: "NotoSerifBengali";
+
+                                        &:hover {
+                                            text-decoration: underline;
+                                        }
+                                        
+                                    }
+                                }
+                            }
+
+                        }
+                    }
+                    
+                    .azad-multi-posts {
+                        display: grid;
+                        grid-template-columns: 1fr 1fr;
+                        grid-gap: 2rem;
+
+                        article {
+                            box-shadow: 2px 2px 2px rgba(0,0,0,.3);
+                            background: white;
+
+                            .article-header {
+
+                                figure {
+                                    a {
+                                        img {
+                                            width: 100%;
+                                            height: auto;
+                                        }
+                                    }
+                                }
+                            }
+                            .article-body {
+
+                                h2 {
+                                    padding: .5rem .5rem 0;
+
+                                    a {
+                                        display: block;
+                                        text-decoration: none;
+                                        font-family: "NotoSerifBengali";
+                                        color: var(--black);
+
+                                        &:hover {
+                                            text-decoration: underline;
+                                        }
+                                        
+                                    }
+                                }
+                            }
+                        }
+                    }            
+                }
+            }
+            
+        }        
+
+        .portfolio {
+            background: white;
+            border: 1px solid #e3e3e3;
+            box-shadow: 0px 2px 2px rgba(0,0,0,.3);
+            position: relative;
+            border: 1px solid var(--red);
+
+            h3 {
+                background: var(--red);
+                position: absolute;
+                top: -47px;
+                width: 100%;
+                left: 0;
+                padding: .5rem;
+                text-align: center;
+                color: white;
+                font-family: "NotoSerifBengali";
+            }
+
+            article {
+                padding: .6rem 1rem;
+                border-bottom: 1px solid #e3e3e3;
+
+                .article-header {
+                    figure {
+                        a {
+                            img {
+                                width: 64px;
+                                height: 64px;
+                                margin: 0 auto;
+                                border: 1px solid #e3e3e3;
+                                border-radius: 50%;
+                            }
+                        }
+                    }
+                }            
+
+                .article-body {
+                    text-align: center;
+
+                    h2, h4 {
+                        margin: 0;
+                        padding: 0;
+                        line-height: 100%;        
+                        a {
+                            text-decoration: none;
+                            font-size: 1rem;
+                            font-family: "NotoSerifBengali";
+                            color: var(--black);
+                            &:hover {
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                    h2 {        
+                        a {
+                            font-size: .8rem;
+                        }
+                    }
+                }
+                &:last-child {
+                    border-bottom: none;
+                }
+            }
+        }
+    }
+} // Portfolio grid
+
+section.azad-bottom-posts {
+    margin: var(--section-margin-top) 0 0;
+    padding: 3rem 0 5rem;
+    background: var(--red);
+
+    h3 {
+        color: white;
+        margin: .8rem;
+        position: relative;
+
+        &:before {
+            content: '';
+            display: block;
+            width: 3px;
+            height: 100%;
+            top: 0;
+            left: -10px;
+            background: white;
+            position: absolute;
+        }
+    }
+
+    .azad-bottom-posts-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .azad-category {
+            width: 63%;
+            display: flex;
+            flex-direction: row;
+            box-shadow: 2px 2px 2px rgba(0,0,0,.3);
+            
+            .cat-coll {
+                width: 50%;
+                position: relative;
+                background: white;
+
+                .space {
+                    padding: 10px;
+                    color: white;
+
+                    h2 {
+                        a {
+                            color: var(--black);
+                            text-decoration: none;
+                            margin-bottom: 1rem !important;
+                            display: block;
+
+                            &:hover {
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                    p {
+                        color: var(--black);
+                    }
+                }
+
+                .azad-figure {
+                    figure {
+                        img {
+                            width: 100% !important;
+                            height: auto;
+                        }
+                    }
+                }
+
+                .swiper-container {
+
+                    .gallery-thumbs {
+                        position: relative;
+
+                        .swiper-wraper {
+
+                            article.swiper-slide {
+                                width: 100% !important;
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                opacity: 0;
+                            }
+
+                            .swiper-slide-thumb-active {
+                                opacity: 1;
+                                color: red;
+                            }
+
+                        }  
+                    }
+
+                    .gallery-top {
+
+                        .swiper-slide {
+                            background: red;
+                            position: absolute;
+                            width: 100%;
+                            left: 0;
+                            bottom: 0;
+
+                            figure {
+                                img {
+                                    width: 100% !important;
+                                    height: auto;
+                                }
+                            }
+                        }
+                    }
+                    
+                }
+            }
+        }
+
+        .azad-category-post {
+            width: 34.5%;
+            position: relative;
+
+            h3 {
+                position: absolute;
+                top: -19%;
+                left: 0;
+                margin: .8rem 0 0 .6rem;
+            }
+
+            article {
+                display: flex;
+                flex-direction: row;
+                margin-bottom: 1.5rem;
+                background: white;
+                box-shadow: 2px 2px 2px rgba(0,0,0,.3);
+
+                &:nth-child(4) {
+                    margin-bottom: 0;
+                }
+
+                .post-header {
+                    width: 30%;
+                    position: relative;
+
+                    &:before {
+                        content: '\e655' !important;                                                    
+                        position: absolute;
+                        left: .1rem;
+                        bottom: .9rem;
+                        display: block;
+                        font-family: 'thegem-icons';
+                        font-weight: normal;
+                        font-size: 3rem;
+                        line-height: inherit;
+                        text-align: center;
+                        color: var(--red);
+                    }
+
+                    figure {
+                        a {
+                            img {
+                                width: 100%;
+                                height: auto;
+                            }
+                        }
+                    }
+                }
+                .post-body {
+                    width: 70%;
+
+                    h2 {
+                        padding: 0 10px;
+                        line-height: 1.4rem;
+                        a {
+                            font-size: 18px;
+                            text-decoration: none;
+                            font-family: "NotoSerifBengali";
+                            color: var(--black);
+
+                            &:hover {
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }    
+}
+
+@media only screen and (max-width: 767px),
+only screen and ( max-device-width: 767px ) {
+    
+    section.azad-news-scroll {
+        padding: 1rem 0;
+
+        .azad-breaking-news {
+
+            .breaking-news-container {
+
+                .bn-title {
+                    background: var(--black);
+                    color: white;
+                    padding: 10px;
+                    font-size: 18px;
+                }
+            }
+        }
+    }  
+
+    section.azad-front-main-content {
+        margin: 0 0 0;
+        padding: 0 0 0;
+
+        .azad-front-main-content-container {
+            grid-template-columns: 1fr;
+            grid-gap: 1rem !important;
+
+            .azad-banner {
+
+                article {
+                    flex-direction: column;
+                    padding-right: 0px;
+
+                    .article-body {
+                        width: 100%;
+                        position: relative;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        transform: translate(0%, 0%) rotate(0deg);
+
+                        .article-body-inner {
+                            margin: 0;
+                            padding: .5rem 0;
+
+                            h2 {
+                                padding: 0;
+
+                                a {
+                                    font-size: 1.5rem;
+                                    line-height: 2rem;
+
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            
+            .azad-front-main-content-col {
+                grid-template-columns: 1fr;
+                grid-gap: 1rem;
+
+                article {
+                    grid-template-columns: .7fr 1.3fr;
+
+                    .post-header {}
+                    .post-body {}
+                }
+                
+            }
+            
+        }
+    } 
+
+    section.azad-carousel {
+        margin: 0;
+        padding: 1rem 0 0;
+
+        .gallery-blog .swiper-button-prev {
+            left: 80% !important;
+        }
+
+        .azad-carousel-four {
+            article {
+                width: 100%;
+                margin-bottom: .5rem;
+            }
+        }
+    }
+
+    // AZAD TAB SECTION BEGINS
+    section.azad-tabs-section {
+        padding: 0rem 0 2rem;
+        margin: 1rem 0 0;
+        
+        .azad-tabs-row {
+            flex-direction: column;
+
+            .azad-tabs-container {
+                width: 100%;
+                flex-direction: column;
+
+                .azad-single-post {
+                    width: 100%;
+                    margin-bottom: 1rem;
+
+                    article {
+                        flex-direction: column;
+                        position: relative;
+
+                        .article-header {
+                            width: 100%;
+
+                            figure {
+                                a {
+                                    img {
+                                        width: 100%;
+                                        height: auto;
+                                    }
+                                }
+                            }
+                        }
+
+                        .article-body {
+                            width: 100%;
+                            position: relative;
+                            left: 0;
+                            right: 0;
+                            bottom: 0;
+
+                            h2 {
+                                text-align: center;
+                                padding: .5rem;
+
+                                a {
+                                    font-size: 1.5rem;
+                                    line-height: 2rem;
+                                    text-align: left;
+                                    display: block;
+                                }
+                            }
+                        }
+
+                    }
+                }
+                
+                .azad-multi-posts {
+                    width: 100%;
+
+                }            
+            }
+            .azad-tabs-group {
+                width: 100%;
+                margin-top: 2.5rem;
+
+                h3 {
+                    margin: 10px 0 10px 10px;
+                    font-weight: bold;
+                    position: relative;
+
+                    &:before {
+                        content: '';
+                        display: block;
+                        width: 5px;
+                        height: 100%;
+                        top: 0;
+                        left: -10px;
+                        background: var(--red);
+                        position: absolute;
+                    }
+                }
+
+                article {
+                    background: var(--red);
+                    padding: 10px;
+                    border-bottom: 1px dotted #d2d1d1;
+
+                    h2 {
+                        line-height: 1.4rem;
+
+                        a {
+                            text-decoration: none;
+                            font-size: 18px;
+                            font-weight: bold;
+
+                            &:hover {
+                                color: #369;;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    } // ends azad tab sections
+
+    // AZAD DOUBLE POSTS BEGINS
+    section.azad-double-posts {
+        margin: 2rem 0 0;
+        padding: 0;
+        
+        .azad-double-posts-row {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 4rem;
+
+            .azad-tabs-container {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-gap: 2rem;
+
+                .azad-single-post {
+                    position: relative;
+                    background: white;
+                    box-shadow: 2px 2px 2px rgba(0,0,0,.3);
+
+                    h3 {
+                        color: var(--black);
+                        position: absolute;
+                        top: -16%;
+                        left: 0;
+                        margin: .8rem 0 0 .6rem;
+
+                        &:before {
+                            content: '';
+                            display: block;
+                            width: 3px;
+                            height: 100%;
+                            top: 0;
+                            left: -10px;
+                            background: var(--red);
+                            position: absolute;
+                        }
+                    }
+
+                    article {
+                        
+                        .article-header {
+                            width: 100%;
+
+                            figure {
+                                a {
+                                    img {
+                                        width: 100%;
+                                        height: 313px;
+                                    }
+                                }
+                            }
+                        }
+
+                        .article-body {
+
+                            h2 {
+                                text-align: left;
+                                line-height: 1rem;
+
+                                a {
+                                    font-size: 1.5rem;
+                                    line-height: 2rem;
+                                    color: white;
+                                    display: block;
+                                    padding: 5px;
+                                    color: var(--black);
+                                    text-decoration: none;
+                                    font-family: "NotoSerifBengali";
+
+                                    &:hover {
+                                        text-decoration: underline;
+                                    }
+                                    
+                                }
+                            }
+                        }
+
+                    }
+                }
+                
+                .azad-multi-posts {
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    grid-gap: 1rem;
+
+                    article {
+                        background: white;
+                        box-shadow: 2px 2px 2px rgba(0,0,0,.3);
+                        display: grid;
+                        grid-template-columns: 1fr 1fr;
+                        grid-gap: 1rem;
+
+                        .article-header {
+                            figure {
+                                a {
+                                    img {
+                                        width: 100%;
+                                        height: auto;
+                                    }
+                                }
+                            }
+                        }
+                        .article-body {
+                            h2 {
+                                a {
+                                    text-decoration: none;
+                                    font-family: "NotoSerifBengali";
+                                    color: var(--black);
+                                    display: block;
+
+                                    &:hover {
+                                        text-decoration: underline;
+                                    }
+                                    
+                                }
+                            }
+                        }
+                    }
+                }            
+            }
+        }
+    } // ends azad double posts
+
+    // PORTFOLIO BEGINS
+    section.azad-portfolio-section {
+        margin: 2rem 0 0;
+        padding: 0 0 0;
+
+        .tabs {
+            display: grid;
+            grid-template-columns: auto auto;
+            justify-content: space-between;
+
+            h5 {
+                display: flex;
+                background: white;
+                justify-content: center;
+                align-items: center;
+                padding: 10px;
+                position: relative;
+                font-size: 1rem;
+
+                &:after {
+                    content: '';
+                    width: 3px;
+                    height: 71%;
+                    background: var(--red);
+                    left: 0;
+                    top: 7px;
+                    position: absolute;
+                }
+            }
+
+            .mobile-tab {
+                position: relative;
+
+                h4 {
+                    display: flex;
+                    background: white;
+                    justify-content: center;
+                    align-items: center;
+                    position: relative;
+                    padding: 1rem;
+                }
+
+                .nav-tabs {
+                    display: none;
+                    flex-direction: row;
+                    list-style-type: none;
+                    position: absolute;
+                    top: 100%;
+                    right: 0;
+                    z-index: 99;
+                    
+                    li {
+                        background: var(--red);
+                        
+                        a {
+                            padding: .8rem;
+                            text-decoration: none;
+                            display: block;
+                            font-family: "NotoSerifBengali";
+                            color: var(--black);
+                            font-size: 1rem;
+                            border-radius: 0;
+
+                            &:hover, &:focus {
+                                color: var(--black);
+                                cursor: default;
+                                background-color: #fff;
+                            }
+                        }
+
+                        &.active {
+                            a {
+                                color: var(--black);
+                                cursor: default;
+                                background: var(--red);
+                            }
+                        }
+                    }
+                }
+                &:hover {
+                    .nav-tabs {
+                        display: block;
+                        flex-direction: column;
+                        position: absolute;
+                        top: 100%;
+                    }
+                }
+            }
+        }
+        
+        .azad-portfolio-section-container {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 4rem;
+
+            .azad-tab-content {
+
+                .azad-tab-row {
+                    &.tab-pane {
+                        display: none;
+                        &.active {
+                            display: block;
+                        }
+                    }
+
+                    .azad-tabs-container { 
+                        display: grid;
+                        grid-template-columns: 1fr;
+                        grid-gap: 2rem;
+
+                        .azad-single-post {
+                            background: white;
+                            box-shadow: 2px 2px 2px rgba(0,0,0,.3);
+
+                            article {
+                                position: relative;
+
+                                .article-header {
+
+                                    figure {
+                                        a {
+                                            img {
+                                                width: 100%;
+                                                height: auto;
+                                            }
+                                        }
+                                    }
+                                }
+
+                                .article-body {
+
+                                    h2 {
+                                        text-align: center;
+                                        line-height: 1rem;
+                                        padding: 1rem 0;
+
+                                        a {
+                                            font-size: 1.5rem;
+                                            line-height: 2rem;
+                                            color: white;
+                                            display: block;
+                                            padding: 5px;
+                                            color: var(--black);
+                                            text-decoration: none;
+                                            font-family: "NotoSerifBengali";
+
+                                            &:hover {
+                                                text-decoration: underline;
+                                            }
+                                            
+                                        }
+                                    }
+                                }
+
+                            }
+                        }
+                        
+                        .azad-multi-posts {
+                            display: grid;
+                            grid-template-columns: 1fr;
+                            grid-gap: 2rem;
+
+                            article {
+                                box-shadow: 2px 2px 2px rgba(0,0,0,.3);
+                                background: white;
+
+                                .article-header {
+
+                                    figure {
+                                        a {
+                                            img {
+                                                width: 100%;
+                                                height: auto;
+                                            }
+                                        }
+                                    }
+                                }
+                                .article-body {
+
+                                    h2 {
+                                        padding: .5rem .5rem 0;
+
+                                        a {
+                                            display: block;
+                                            text-decoration: none;
+                                            font-family: "NotoSerifBengali";
+                                            color: var(--black);
+
+                                            &:hover {
+                                                text-decoration: underline;
+                                            }
+                                            
+                                        }
+                                    }
+                                }
+                            }
+                        }            
+                    }
+                }
+                
+            }        
+
+            .portfolio {
+                background: white;
+                border: 1px solid #e3e3e3;
+                box-shadow: 0px 2px 2px rgba(0,0,0,.3);
+                position: relative;
+
+                h3 {
+                    background: var(--red);
+                    position: absolute;
+                    top: -47px;
+                    width: 100%;
+                    left: 0;
+                    padding: .5rem;
+                    text-align: center;
+                    color: white;
+                    font-family: "NotoSerifBengali";
+                }
+
+                article {
+                    padding: .6rem 1rem;
+                    border-bottom: 1px solid #e3e3e3;
+
+                    .article-header {
+                        figure {
+                            a {
+                                img {
+                                    width: 85px;
+                                    height: auto;
+                                    margin: 0 auto;
+                                    border: 1px solid #e3e3e3;
+                                    border-radius: 50%;
+                                }
+                            }
+                        }
+                    }            
+
+                    .article-body {
+                        h2 {
+                            text-align: center;
+                            
+                            a {
+                                text-decoration: none;
+                                font-size: 18px;
+                                font-family: "NotoSerifBengali";
+                                color: var(--black);
+                            }
+                        }
+                    }
+                    &:last-child {
+                        border-bottom: none;
+                    }
+                }
+            }
+        }
+    } // ends grid
+
+    section.azad-bottom-posts {
+        padding: 2rem 0;
+        background: #dd3333;
+
+        .azad-bottom-posts-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .azad-category {
+                width: 100%;
+                flex-direction: column-reverse;
+                box-shadow: 2px 2px 2px rgba(0,0,0,.3);
+
+                .cat-coll {
+                    width: 100%;
+                }
+
+                p {
+                    display: none;
+                }
+
+                article {
+                    display: flex;
+                    flex-direction: column-reverse;
+                    margin-bottom: 10px;
+                    background: white;
+
+                    .post-header {
+                        width: 100%;
+
+                        figure {
+                            a {
+                                img {
+                                    width: 100%;
+                                    height: auto;
+                                }
+                            }
+                        }
+                    }
+                    .post-body {
+                        width: 100%;
+
+                        h2 {
+                            padding: 0 10px;
+                            line-height: 1.4rem;
+                            a {
+                                font-size: 18px;
+                                text-decoration: none;
+                            }
+                        }
+                        .content {
+                            padding: 0 10px;
+                        }
+                    }
+                }
+            }
+
+            .azad-category-post {
+                width: 100%;
+                margin-top: 4rem;
+
+                h3 {
+                    top: -22%;
+                }
+
+                article {
+                    display: flex;
+                    flex-direction: row;
+                    margin-bottom: 1rem;
+                    background: white;
+                    box-shadow: 2px 2px 2px rgba(0,0,0,.3);
+                    align-items: center;
+
+                    .post-header {
+                        width: 30%;
+
+                        figure {
+                            a {
+                                img {
+                                    width: 100%;
+                                    height: auto;
+                                }
+                            }
+                        }
+                    }
+                    .post-body {
+                        width: 70%;
+
+                        h2 {
+                            padding: 0 10px;
+                            line-height: 1.4rem;
+                            a {
+                                font-size: 18px;
+                                text-decoration: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }    
+    }
+
+}
+

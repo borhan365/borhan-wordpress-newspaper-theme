@@ -1,0 +1,82 @@
+/**
+*-------------------------
+* :: CONTACT PAGE
+*-------------------------
+*/
+section.azad-contact {
+    padding: 2rem 0;
+    margin: 0 0;
+
+    header {
+        border-bottom: 1px solid var(--red);
+        text-align: center;
+        padding-bottom: .6rem;
+        margin-bottom: .6rem;
+        color: var(--red);
+    }
+    .azad-article-content {
+        width: 50%;
+        margin: 1.5rem auto;
+
+        form {            
+
+            p {
+                label {
+                    width: 100%;
+                }
+            }
+
+            input {
+                width: 100%;
+                border: 1px solid var(--red);
+                padding: .5rem;
+                background: white;
+                border-radius: 3px;
+            }
+            input[type="submit"] {
+                width: 20%;
+                padding: .5rem;
+                background: var(--red);
+                color: white;
+            }
+            textarea {
+                width: 100%;
+                background: white;
+                margin: 0;
+                padding: .5rem;
+                border: 1px solid var(--red);
+                border-radius: 3px;
+                box-sizing: border-box;
+                font-size: 1rem;
+                font-weight: normal;
+                font-family: "NotoSerifBengali";
+
+                &:hover, &:focus {
+                    border: 1px solid var(--red);
+                    outline: none;
+                }
+            }
+        }       
+    }
+}
+
+@media only screen and ( max-width: 767px ),
+only screen and ( max-device-width: 767px ) {
+    section.azad-contact {
+        header {
+            border-bottom: 1px solid var(--red);
+            text-align: center;
+            padding-bottom: .6rem;
+            margin-bottom: .6rem;
+            color: var(--red);
+        }
+        .azad-article-content {
+            width: 100%;
+
+            form {
+                width: 100%;
+                margin: 0 auto;              
+            }        
+        }
+    }
+}

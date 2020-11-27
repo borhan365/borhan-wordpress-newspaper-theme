@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,SAAS,AAAA,CACL,UAAU,CAAE,GAAG,CAClB",
+    "sources": [
+        "../sass/pages/404.scss"
+    ],
+    "names": [],
+    "file": "404.min.css"
+}

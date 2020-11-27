@@ -1,0 +1,130 @@
+/**
+*-------------------------
+* :: AUTHOR PAGE
+*-------------------------
+*/
+section.azad-author-bio {
+    margin: 3rem 0 0 !important;
+    padding: 0rem 0;
+
+    .author-bio-container {
+        text-align: center;
+
+        img {
+            border-radius: 50%;
+        }
+    }
+    .author-bottom {
+        margin: 1rem 0;
+        height: 3rem;
+        background: var(--red);
+    }
+}
+section.azad-author {
+    margin: 2rem 0 !important;
+    padding: 0rem 0;
+
+    .author-container {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        grid-gap: 2rem;
+
+        .author-main{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 2rem;
+
+            article {
+                display: grid;
+                grid-template-columns: 1fr 2fr;
+                grid-gap: 1rem;
+                background: #ffffff;
+
+                header {
+                    figure {
+                        img {
+                            width: 100%;
+                            height: auto;
+                        }
+                    }
+                }
+                .article-body {
+                    padding: 1rem 0;
+                    
+                    .article-content {
+
+                        .azad-time {
+                            span {
+                                color: var(--red);
+                                font-size: 1.2rem;
+                                font-family: "NotoSerifBengali";
+                            }
+                        }
+
+                        h2 {
+                            padding: .6rem 0 .6rem;
+                            font-family: "NotoSerifBengali";
+
+                            a {
+                                color: black;
+                                font-size: 1.5rem;
+                                text-decoration: none;
+                                transition: all 0.5s ease-in-out !important;
+
+                                &:hover {
+                                    color: var(--red);
+                                }
+                            }
+                        }
+
+                        p {
+                            color: black;
+                            font-size: 1.2rem;
+                            font-family: "NotoSerifBengali";
+                        }
+                    }
+
+                    .article-footer {
+                        color: var(--red);
+
+                        .post-categories {
+                            display: flex;
+                            flex-direction: row;
+                            padding: .5rem 0;
+                            flex-flow: wrap;
+
+                            li {
+                                margin: 0 .5rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }        
+    }
+}
+
+@media only screen and ( max-width: 767px ),
+only screen and ( max-device-width: 767px ) {    
+
+    section.azad-author {
+
+        .author-container {
+            grid-template-columns: 1fr;
+            grid-gap: 1rem;
+
+            .author-main {
+                article {
+                    grid-template-columns: 1fr;
+                    grid-gap: 0rem;
+                    background: #ffffff;
+
+                    header, .article-body {}
+                    
+                }
+            }
+            
+        }
+    }
+
+}

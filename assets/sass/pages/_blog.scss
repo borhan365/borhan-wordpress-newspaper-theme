@@ -1,0 +1,163 @@
+/**
+*-------------------------
+* :: BLOG PAGE
+*-------------------------
+*/
+section.azad-blog {
+    margin: 1rem 0 3rem;
+    padding: 0rem 0;
+
+    .blog-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2rem;
+
+        article {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            grid-gap: 1rem;
+            background: #ffffff;
+            box-shadow: 2px 2px 2px rgba(0,0,0,0.3);
+            align-items: center;
+
+            header {
+                
+                figure {
+                    img {
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+            }
+            .post-content {
+
+                .article-content {
+                    h2 {
+                        a {
+                            color: var(--black);
+                            text-decoration: none;
+                            transition: all 0.5s ease-in-out !important;
+                            font-family: "NotoSerifBengali";
+
+                            &:hover {
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+
+                    p {
+                        color: #757272;
+                    }
+                }
+
+                .article-footer {
+                    padding: 0 0 0 .5rem;
+
+                    .post-categories {
+                        display: flex;
+                        flex-direction: row;
+                        padding: .5rem 0;
+                        flex-flow: wrap;
+
+                        li {
+                            margin: 0 .5rem;
+
+                            a {
+                                text-decoration: none;
+
+                                &:hover {
+                                    color: red;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            &:hover {
+                .post-content {
+                    .article-content {
+                        h2 {
+                            a {
+                                color: #3a3838;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .nav-links {
+        margin-top: 2rem;
+        display: grid;
+        grid-template-columns: 5% 5%;
+        grid-gap: 0rem;        
+
+        .nav-previous {
+            
+            a {
+                position: relative;
+                display: block;
+                width: 2.3rem;
+                height: 2.3rem;
+
+                &:before {
+                    content: '\e603';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    padding: .5rem;
+                    background: var(--red);
+                    font-family: 'thegem-icons';
+                    font-weight: normal;
+                    font-size: 1.5rem;
+                    line-height: inherit;
+                    text-align: center;
+                    color: white;
+                }
+            }
+
+        }
+
+        .nav-next {
+            a {
+                position: relative;
+                display: block;
+
+                &:before {
+                    content: '\e601';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    padding: .5rem;
+                    background: var(--red);
+                    font-family: 'thegem-icons';
+                    font-weight: normal;
+                    font-size: 1.5rem;
+                    line-height: inherit;
+                    text-align: center;
+                    color: white;
+                }
+            }
+        }
+
+    }
+}
+
+@media only screen and ( max-width: 767px ),
+only screen and ( max-device-width: 767px ) {    
+
+    section.azad-blog {
+        margin: 2rem 0;
+        padding: 0rem 0;
+
+        .blog-container {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 2rem;
+
+            article {}
+        }
+    }
+
+}

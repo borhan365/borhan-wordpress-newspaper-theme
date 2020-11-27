@@ -1,0 +1,104 @@
+/**
+*-------------------------
+* :: ARCHIVE PAGE
+*-------------------------
+*/
+.azad-archive {
+    background: #f6f6f6;
+    margin: 0rem 0 0 !important;
+    padding: 0rem 0 !important;
+
+    .archive-container {
+
+        article {
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 1rem;
+
+            header {
+                width: 30%;
+                
+                figure {
+                    img {
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+            }
+            .article-body {
+                padding: 0 .5rem;
+                background: #ffffff;
+                width: 70%;
+
+                .article-content {
+                    padding: 0 0 0;
+
+                    h2 {
+                        padding: 0 0 .5rem;
+
+                        a {
+                            color: var(--red);
+                            text-decoration: none;
+                            transition: all 0.5s ease-in-out !important;
+                        }
+                    }
+
+                    p {
+                        color: #757272;
+                    }
+                }
+
+                .article-footer {
+                    .post-categories {
+                        display: flex;
+                        flex-direction: row;
+                        padding: .5rem 0;
+                        flex-flow: wrap;
+
+                        li {
+                            margin: 0 .5rem;
+
+                            a {
+                                text-decoration: none;
+
+                                &:hover {
+                                    color: red;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            &:hover {
+                .article-body {
+                    .article-content {
+                        h2 {
+                            a {
+                                color: blue;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and ( max-width: 767px ),
+only screen and ( max-device-width: 767px ) {
+
+    .azad-archive {
+
+        .archive-container {
+            article {
+                flex-direction: column;
+
+                header, .article-body {
+                    width: 100%;
+                }        
+            }
+        }
+
+    }    
+
+}

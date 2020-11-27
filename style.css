@@ -1,0 +1,63 @@
+/**
+*-------------------------------------------------------------------------------------------
+Theme Name: Voice World 24
+Theme URI: http://www.gittechs.com
+Description: Azad oop starter pack. A multi-perpose wordpress theme. Super easy to handle.
+Author: Md. Abul Kalam Azad
+Author URI: http://www.gittechs.com
+Version: 1.0.0
+Tags: two-columns, right-sidebar, custom-header, custom-colors, custom-background, custom-menu, theme-options, threaded-comments, sticky-post, translation-ready, microformats, rtl-language-support, editor-style.
+License: GPL2
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: azad-news
+Domain Path: /lang
+*-------------------------------------------------------------------------------------------
+*/
+/* ALLL FONTS */
+@font-face {
+	font-family: "NotoSerifBengali";
+	src: url("assets/fonts/NotoSerifBengali-Regular.eot"); /* IE9 Compat Modes */
+	src: url("assets/fonts/NotoSerifBengali-Regular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("assets/fonts/NotoSerifBengali-Regular.otf") format("opentype"), /* Open Type Font */
+    url("assets/fonts/NotoSerifBengali-Regular.svg") format("svg"), /* Legacy iOS */
+    url("assets/fonts/NotoSerifBengali-Regular.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("assets/fonts/NotoSerifBengali-Regular.woff") format("woff"), /* Modern Browsers */
+    url("assets/fonts/NotoSerifBengali-Regular.woff2") format("woff2"); /* Modern Browsers */
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "NotoSerifBengali-Bold";
+	src: url("assets/fonts/NotoSerifBengali-Bold.eot"); /* IE9 Compat Modes */
+	src: url("assets/fonts/NotoSerifBengali-Bold.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("assets/fonts/NotoSerifBengali-Bold.otf") format("opentype"), /* Open Type Font */
+    url("assets/fonts/NotoSerifBengali-Bold.svg") format("svg"), /* Legacy iOS */
+    url("assets/fonts/NotoSerifBengali-Bold.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("assets/fonts/NotoSerifBengali-Bold.woff") format("woff"), /* Modern Browsers */
+    url("assets/fonts/NotoSerifBengali-Bold.woff2") format("woff2"); /* Modern Browsers */
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'thegem-icons';
+	src:url('assets/fonts/thegem-icons.eot');
+	src:url('assets/fonts/thegem-icons.eot?#iefix') format('embedded-opentype'),
+		url('assets/fonts/thegem-icons.woff') format('woff'),
+		url('assets/fonts/thegem-icons.ttf') format('truetype'),
+		url('assets/fonts/thegem-icons.svg#thegem-icons') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'thegem-socials';
+	src:url('assets/fonts/thegem-socials.eot');
+	src:url('assets/fonts/thegem-socials.eot?#iefix') format('embedded-opentype'),
+		url('assets/fonts/thegem-socials.ttf') format('truetype'),
+		url('assets/fonts/thegem-socials.woff') format('woff'),
+		url('assets/fonts/thegem-socials.svg#thegem-socials') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}

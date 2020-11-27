@@ -1,0 +1,26 @@
+/**
+*-----------------------------------------------------
+* :: = COLOR COMPONENTS
+*-----------------------------------------------------
+*/
+:root {
+    --text: rgba( 255, 255, 255, .5 );
+    --bg: rgba( 239, 240, 241, 1 );
+    --body: rgba( 65, 64, 66, .8 );
+    --border-top: tomato;
+    --border: rgba( 204, 204, 204, 1 );
+    --border-bottom: rgba( 204, 204, 204, 1 );
+    --menu-text: red;
+    --menu-text-hover: tomato;
+    --menu-bg: tomato;
+    --menu-bg-hover: tomato;
+    --header-bg: rgba( 46, 42, 39, 1 );
+    --white: rgba( 255, 255, 255, 1 );
+    --black: rgba( 0, 0, 0, 1 );
+    --tranparent: rgba( 0, 0, 0, 0 );
+    --btn-text: rgba( 255, 255, 255, 1 );
+    --btn-text-hover: rgba( 0, 0, 0, 0 );
+    --btn-bg: rgba( 247, 15, 97, 1 );
+    --btn-bg-hover: rgba( 121, 47, 223, 1 );
+    --red: #dd3432;
+}

@@ -1,0 +1,89 @@
+/**
+*-------------------------
+* :: ABOUT PAGE
+*-------------------------
+*/
+.azad-about {
+    header {
+        border-bottom: 1px solid var(--red);
+        text-align: center;
+        padding-bottom: .6rem;
+        margin-bottom: .6rem;
+        color: var(--red);
+    }
+    .azad-article-content {
+
+        .rep-row {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-bottom: 1rem;
+
+            .rep-left {
+                background: blue;
+                width: 12%;
+
+                figure {
+                    img {
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+            }
+            .rep-right {
+                width: 87%;
+                background: white;
+                padding: 1rem;
+
+                p {
+                    margin-bottom: .6rem;
+                }
+            }
+            
+        }        
+    }
+}
+
+@media only screen and ( max-width: 767px ),
+only screen and ( max-device-width: 767px ) {
+    .azad-about {
+        header {
+            border-bottom: 1px solid var(--red);
+            text-align: center;
+            padding-bottom: .6rem;
+            margin-bottom: .6rem;
+            color: var(--red);
+        }
+        .azad-article-content {
+
+            .rep-row {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                margin-bottom: 1rem;
+
+                .rep-left {
+                    background: white;
+                    width: 19.5%;
+
+                    figure {
+                        img {
+                            width: 100%;
+                            height: auto;
+                        }
+                    }
+                }
+                .rep-right {
+                    width: 80%;
+                    background: white;
+                    padding: 1rem;
+
+                    p {
+                        margin-bottom: .6rem;
+                    }
+                }
+                
+            }        
+        }
+    }
+}
